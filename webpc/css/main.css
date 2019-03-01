@@ -1,0 +1,387 @@
+* {
+	margin: 0;
+	padding: 0;
+	}
+	html, body {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	background: url(../img/2588.jpg) center center / cover; 
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	}
+	div::-webkit-scrollbar {width: 0em;}
+	div::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 0px rgba(185,156,97,0.6);
+	border-radius: 10px;}
+	div::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(185,156,97,0.9);}
+	div::-webkit-scrollbar-corner {
+	background: none;}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	background: rgba(247, 247, 247, 0.1);
+	}
+/************************************************Popup menu start**************************/	 
+.hidden-menu, .hidden-menu2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	list-style:none;
+	margin: 0;
+	box-sizing: border-box;
+	width: 100vw;
+	/* background-color: rgba(40,39,39,1);*/
+	/*background: rgba(36, 36, 34, 1);*/
+	height: 100%;
+	top: 0;
+	right: -100vw;
+	transition: right .3s;
+	z-index: 20;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	/*background: url(../img/backpopup3.png)  center center / cover;*/ 
+	}
+	.hidden-menu-ticker, .hidden-menu-ticker2 {
+	display: none;
+	}
+	.btn-menu, .btn-menu2 {
+	color: red;
+	background-color: none;
+	cursor: pointer;
+	transition: left .23s;
+	z-index: 3;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	}
+	.hidden-menu-ticker:checked ~ .btn-menu {
+	right: 0;
+	}
+	.hidden-menu-ticker:checked ~ .hidden-menu {
+	right: 0;
+	}
+	.hidden-menu-ticker2:checked ~ .btn-menu2 {
+	right: 0;
+	}
+	.hidden-menu-ticker2:checked ~ .hidden-menu2 {
+	right: 0;
+	}
+/************************************************Popup menu end**************************/	 
+.authorization, .registration {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 30vw;
+	height: 80vh;
+	background: rgba(36, 36, 34, 1);
+	border: 1px solid rgba(252, 213, 133, 0.3);
+	border-radius: 6px;
+	padding: 2vh 2vw 2vh 2vw;
+	box-sizing: border-box;
+}
+ .registration {
+	width: 30vw;
+	height: 90vh;
+	
+}
+
+/***************************************SIGN IN start*************************************/		
+#boozertitle {
+	font-weight: 100;
+	font-size: 2.5vw;
+	text-align: center;
+	margin-bottom: 11vh;
+	color: #ffd98e;
+	letter-spacing: 1px;
+	font-family: roboto;
+	}
+	#EEmail1 {
+	margin-top: 0em;
+	}
+	#EPassword {
+	margin-bottom: 1vh;
+	margin-top: 5vh;
+	}
+	.fpass{
+	color:#FCD585;
+	/*color: #FFE5B0;*/
+	font-size: 1vw;
+	margin-top: 5vh;
+	font-weight: 100;
+	text-decoration: none;
+	}
+	.checkbox {
+	margin-top: 1vh;
+	margin-left: -19vw;
+	}
+	input[type=checkbox], input[type=radio] {display: none;}
+	input[type=checkbox] + label:before {
+	content: "\2713";
+	color: transparent;
+	display: inline-block;
+	border: 1px solid rgba(255,229,176, 0.2);
+	border-radius: 2px;
+	font-size: 1vw;   
+	margin: -3px 5px 0 0;
+	height: 2vh;
+	width: 2vh;
+	text-align: center;
+	vertical-align: middle;
+	transition: color ease .3s;
+	}
+	input[type=checkbox]:checked + label:before {
+	/*color: #FFE5B0;*/
+	color:#FCD585;
+	}
+	label {
+	/*color: #FFE5B0;*/
+	color:#FCD585;
+
+	font-weight: 100;
+	}
+
+	.signin {
+	background-color: #FCD585;
+	color: rgba(36, 36, 34, 1);
+	border-radius: 5vw;
+	border: 1px solid rgba(252,213,133, 0.5);
+	border-width: 1px;
+	font-size: 1.5vw;
+	font-weight: 300;
+	display: block;
+	padding: 1vh 2vw 1vh 2vw ;
+	margin-top: 10vh;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 0.5em;
+	}
+	.signin:hover {
+	background-color: #bca365;
+	}
+							
+/***************************************SIGN IN end*************************************/
+/***************************************SIGN UP start*************************************/			
+#registertitle {
+	margin-bottom: 5vh;
+	margin-top: 0vh;
+	color:#FCD585;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 2.5vw;
+	}
+
+	input[type="text"], select {
+	font-family: 'Roboto', sans-serif;
+	background: rgba(28, 24, 21, 0.2);
+	color:#FCD585;
+	font-size: 1.5vw;
+	font-weight: 100;
+	border: 1px solid rgba(252,213,133, 0.5);
+	border-radius: 6px;
+	width: 100%;
+	margin: 8px 0px;
+	margin-top: 0.6em;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	}
+	select {
+
+	color: grey;
+	font-size: 1.5vw;
+	width: 100%;
+	}
+	option {
+	background: rgba(252, 213, 133, 0.1);
+	color: rgba(45,39,39,1);
+	font-size: 1.5vw;
+	}
+	option[selected] {
+	color: grey;
+	font-size: 1.5vw;
+	}
+	#EEmail2, #NName {
+	margin-top: 0em;
+	}
+
+	#selectsex, #language {
+	background: rgba(28, 24, 21, 0.2);
+	font-size: 1.5vw;
+	font-weight: 100;
+	border-style: solid;
+	margin: 8px 0;
+	margin-top: 0.5em;
+	padding: 10px 5px;
+	border-color: rgba(252,213,133, 0.5);
+	border-width: 1px;
+	border-radius: 6px;
+	}
+	#language {
+	margin-bottom: 0.85em;
+	}
+	.signup {
+	background-color: #FCD585;
+	color: rgba(36, 36, 34, 1);
+	border-radius: 30vw;
+	border: 1px solid rgba(252,213,133, 0.5);
+	font-size: 1.5vw;
+	font-weight: 100;
+	display: block;
+	padding: 1vh 2vw 1vh 2vw ;
+	margin-top: 5vh;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 0em;
+	}
+	.singup:hover {
+	background-color: #bca365;
+	}
+/***************************************SIGN UP end*************************************/			
+/****************************************mainscreen start**************************/
+.main {
+	width: 100%;
+	height:100%;
+	flex-grow: 1;
+	align-items: center;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	}
+	.logo {
+	max-width: 50%;
+	max-height: 50%;
+	}
+	#onlinebar {
+	color: #ffd98e;
+	font-size: 2vw;
+	margin-top: 0.5em;
+	margin-bottom: 2vh;
+	font-weight: 100;
+	}
+	.loginbtn{
+	background: #ffd98e;
+	color: rgba(28, 24, 21, 1);
+	border-radius: 50px;
+	border: 1px solid #ffd98e;
+	font-size: 1.5vw;
+	font-weight: 300;
+	display: block;
+	padding: 1.2vh 3vw 1.2vh 3vw ;
+	margin-top: 1.5em;
+	text-align: center;
+	text-decoration: none;
+	}
+	.loginbtn:hover {
+	background-color: #bca365;
+	}
+	.loginbtnafter {
+	background: #ffd98e;
+	color: rgba(28, 24, 21, 1);
+	border-radius: 6px;
+	border: 1px solid #ffd98e;
+	font-size: 7vw;
+	font-weight: 300;
+	display: block;
+	padding: 1.2vh 3vw 1.2vh 3vw;
+	margin-top: 1.5em;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	}
+
+	.registerbtn {
+	background: rgba(28, 24, 21, 0.3);
+	color: #ffd98e;
+	border-radius: 50px;
+	border: 1px solid #ffd98e;
+	font-size: 1.5vw;
+	font-weight: 300;
+	display: block;
+	padding: 1.5vh 2.1vw 1.5vh 2.1vw;
+	text-align: center;
+	margin-top: 2vh;
+	text-decoration: none;
+	}
+	.registerbtn:hover {
+	background-color: #bca365;
+	}
+	.rgstrbtnafter {
+	background: #bca365;
+	color: #f6d586;
+	border-radius: 6px;
+	border: 1px solid #ffd98e;
+	font-size: 7vw;
+	font-weight: 300;
+	display: block;
+	padding: 1.5vh 6vw 1.5vh 6vw;
+	text-align: center;
+	margin-top: 0.7em;
+	padding-top: 18px;
+	text-decoration: none;
+	}
+/****************************************mainscreen end**************************/
+@media  screen and (min-width: 1366px) and (max-width: 1366px) {
+/****************************************mainscreen start**************************/
+.logo {
+	max-width: 60%;
+	max-height: 60%;
+	}
+	#onlinebar {
+	font-size: 2vw;
+	}
+	.loginbtn{
+	font-size: 1.75vw;
+	margin-top: .5em;
+	}
+	.registerbtn {
+	font-size: 1.75vw;
+	margin-top: 2.5vh;
+	}
+	
+	
+	.checkbox {
+	margin-left: -17vw;
+	}
+	
+	.fpass{
+	color:#FCD585;
+	/*color: #FFE5B0;*/
+	font-size: 1.25vw;
+	margin-top: 5vh;
+	font-weight: 100;
+	text-decoration: none;
+	}
+	
+	#registertitle {
+	margin-bottom: 5vh;
+	margin-top: 0vh;
+	color:#FCD585;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 2vw;
+	}
+	
+	 .registration {
+	width: 30vw;
+	height: 95vh;
+	
+}
+
+
+
+
+
+
+
+
+
+
+}

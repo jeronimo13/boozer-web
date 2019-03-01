@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>Boozer</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+			<link rel="stylesheet" href="css/main.css">
+			<link rel="icon" href="img/icon.png" type="image/png">
+		</head>
+		<body>
+		<div class="wrapper">
+			<header></header>
+			<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+			<input type="checkbox" id="hmt2" class="hidden-menu-ticker2">	
+			<div class="hidden-menu">
+				<div class="authorization">
+					<p id="boozertitle">BOOZER</p>
+					<input type="text" id="EEmail1" placeholder="Enter email...">
+					<input type="text" id="EPassword" placeholder="Enter password...">
+					<div class="checkbox">
+	  					<input type="checkbox" id="check" name="check" />
+	  					<label for="check">Remember me</label>
+					</div>
+					<a class="fpass" href="#fpass_form">Forgot password?</a>
+					<a class="signin" href="index3.html">SIGN IN</a>
+				</div>
+			</div>
+			<div class="hidden-menu2">
+				<div class="registration">
+					<p id="registertitle">REGISTRATION</p>
+					<select id="language" onchange=
+						"if(this.value==='') {this.style.color='gray'} else {this.style.color='#f6d586'}">
+						<option disabled selected value="">Language</option>
+						<option value="1">English</option>
+						<option value="2">Russian</option>
+						</select>
+						<input type="text" id="NName" placeholder="Nickname">
+						<select id="selectsex" onchange=
+							"if(this.value==='') {this.style.color='gray'} else {this.style.color='#f6d586'}">
+						<option disabled selected value="">Sex:</option>
+						<option  value="1">Male</option>
+						<option  value="2">Female</option>
+						</select>
+					<input type="text" id="EEmail3" placeholder="Email">
+					<input type="text" id="Password" placeholder="Password">
+					<input type="text" id="ConfPassword" placeholder="Confirm Password">
+					<div class="checkbox">
+	  					<input type="checkbox" id="check" name="check" />
+	  					<label for="check">Remember me</label>
+					</div>
+					<a class="signup" href="index3.html">SIGN UP</a>
+				</div>
+			</div>
+	
+
+	<div class="main"> 
+		<img src="img/logo123.png" class="logo"></img>
+		<p id="onlinebar">Online bar</p>
+		<label class="btn-menu" for="hmt">
+			<a class="loginbtn">Login</a>
+		</label>
+		<label class="btn-menu2" for="hmt2">
+			<a class="registerbtn">Register</a>
+		</label>	
+	</div> <!--end main-->
+</div> <!--end wrapper-->
+		</body>
+		
+		</html>

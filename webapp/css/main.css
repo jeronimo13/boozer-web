@@ -1,0 +1,576 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	background: url(../img/2588.jpg) center center / cover; 
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+		div::-webkit-scrollbar {width: 0em;}
+		div::-webkit-scrollbar-track {
+			-webkit-box-shadow: inset 0 0 0px rgba(185,156,97,0.6);
+		    border-radius: 10px;}
+		div::-webkit-scrollbar-thumb {
+		    border-radius: 10px;
+		    -webkit-box-shadow: inset 0 0 6px rgba(185,156,97,0.9);}
+		div::-webkit-scrollbar-corner {
+		  background: none;}
+	.wrapper {
+	  display: flex;
+	  flex-direction: column;
+	  height: 100%;
+      background: rgba(247, 247, 247, 0.1);
+	 }
+/************************************************Popup menu start**************************/	 
+	 .hidden-menu, .hidden-menu2 {
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: center;
+		  position: fixed;
+		  list-style:none;
+		  margin: 0;
+		  box-sizing: border-box;
+		  width: 100vw;
+		 /* background-color: rgba(40,39,39,1);*/
+		 /*background: rgba(36, 36, 34, 1);*/
+		  height: 100%;
+		  top: 0;
+		  right: -100vw;
+		  transition: right .3s;
+		  z-index: 20;
+		  -webkit-transform: translateZ(0);
+		  -webkit-backface-visibility: hidden;
+		  /*background: url(../img/backpopup3.png)  center center / cover;*/ 
+		}
+		.hidden-menu-ticker, .hidden-menu-ticker2 {
+		  display: none;
+		}
+		.btn-menu, .btn-menu2 {
+		  color: red;
+		  background-color: none;
+	   	  cursor: pointer;
+		  transition: left .23s;
+		  z-index: 3;
+		  -webkit-transform: translateZ(0);
+		  -webkit-backface-visibility: hidden;
+		}
+		.hidden-menu-ticker:checked ~ .btn-menu {
+		  right: 0;
+		}
+		.hidden-menu-ticker:checked ~ .hidden-menu {
+		  right: 0;
+		}
+		.hidden-menu-ticker2:checked ~ .btn-menu2 {
+		  right: 0;
+		}
+		.hidden-menu-ticker2:checked ~ .hidden-menu2 {
+		  right: 0;
+		}
+		
+		
+/************************************************Popup menu end**************************/	 
+.authorization, .registration {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 85vw;
+	height: 80vh;
+	background: rgba(36, 36, 34, 1);
+	border: 1px solid rgba(252, 213, 133, 0.3);
+	border-radius: 6px;
+}
+ .registration {
+	
+	width: 85vw;
+	height: 90vh;
+	
+}
+
+/***************************************SIGN IN start*************************************/		
+		#boozertitle {
+			font-weight: 100;
+			font-size: 10vw;
+			text-align: center;
+			margin-bottom: 11vh;
+			color: #ffd98e;
+			letter-spacing: 1px;
+			font-family: roboto;
+		}
+				#EEmail1 {
+					margin-top: 0em;
+				}
+				#EPassword {
+					margin-bottom: 1vh;
+					margin-top: 5vh;
+				}
+				.fpass{
+					color:#FCD585;
+					/*color: #FFE5B0;*/
+					font-size: 5vw;
+					margin-top: 5vh;
+					font-weight: 100;
+					text-decoration: none;
+				}
+				.checkbox {
+					margin-top: 1vh;
+					margin-left: -35vw;
+				}
+					input[type=checkbox], input[type=radio] {display: none;}
+						input[type=checkbox] + label:before {
+							content: "\2713";
+							color: transparent;
+							display: inline-block;
+							border: 1px solid rgba(255,229,176, 0.2);
+							border-radius: 2px;
+							font-size: 3vw;   
+						    margin: -3px 5px 0 0;
+							height: 2vh;
+							width: 2vh;
+							text-align: center;
+							vertical-align: middle;
+							transition: color ease .3s;
+						}
+						input[type=checkbox]:checked + label:before {
+							/*color: #FFE5B0;*/
+							color:#FCD585;
+						}
+						label {
+							/*color: #FFE5B0;*/
+							color:#FCD585;
+							
+							font-weight: 100;
+						}
+			/*					.signin {
+									color:#FCD585;
+									/*color: #FFE5B0;*/
+				/*					border-radius: 24px;
+									border: 1px solid rgba(252,213,133, 0.5);
+									 border-width: 1px;
+				/*					/*border: 0.5px solid rgba(255,229,176, 1);*/
+				/*					font-size: 6.5vw;
+									font-weight: 300;
+									display: block;
+									padding: 1.5vh 7.5vw 1.5vh 7.5vw ;
+									margin-top: 10vh;
+									text-align: center;
+									text-decoration: none;
+									margin-bottom: 0.5em;
+								}
+								.signin:hover {
+								 	background-color: #bca365;
+								}*/
+								.signin {
+									/*color:#FCD585;*/
+									background-color: #FCD585;
+									color: rgba(36, 36, 34, 1);
+									/*color: #FFE5B0;*/
+									border-radius: 24px;
+									border: 1px solid rgba(252,213,133, 0.5);
+									 border-width: 1px;
+									/*border: 0.5px solid rgba(255,229,176, 1);*/
+									font-size: 5.5vw;
+									font-weight: 300;
+									display: block;
+									padding: 1vh 6vw 1vh 6vw ;
+									margin-top: 10vh;
+									text-align: center;
+									text-decoration: none;
+									margin-bottom: 0.5em;
+								}
+								.signin:hover {
+								 	background-color: #bca365;
+								}
+							
+/***************************************SIGN IN end*************************************/
+/***************************************SIGN UP start*************************************/			
+	#registertitle {
+		margin-bottom: 2vh;
+		margin-top: 0vh;
+		/*color: #FFE5B0;*/
+		color:#FCD585;
+		letter-spacing: 1px;
+		font-weight: 300;
+		font-size: 7vw;
+	}
+	/*		input {
+				outline: none;
+			}*/
+			input[type="text"], select {
+		/*		border: none; 
+				outline: none;*/
+				font-family: 'Roboto', sans-serif;
+				background: rgba(28, 24, 21, 0.2);
+				 color:#FCD585;
+				font-size: 5vw;
+				font-weight: 100;
+				 border: 1px solid rgba(252,213,133, 0.5);
+                 border-radius: 6px;
+				width: 64vw;
+				margin: 8px 0px;
+			   	margin-top: 0.6em;
+				padding: 10px 10px;
+			}
+				select {
+				
+					color: grey;
+					font-size: 5vw;
+					width: 70vw;
+				}
+				option {
+					background: rgba(252, 213, 133, 0.1);
+					color: rgba(45,39,39,1);
+					font-size: 5vw;
+				}
+				option[selected] {
+					color: grey;
+					font-size: 5vw;
+				}
+					#EEmail2, #NName {
+						margin-top: 0em;
+					}
+				
+					#selectsex, #language {
+					/*border: none; 
+						outline: none;
+						background-color: transparent;*/
+						background: rgba(28, 24, 21, 0.2);
+						font-size: 5vw;
+						font-weight: 100;
+						border-style: solid;
+						/*border-width: 0px;
+						/*border-bottom: 1px solid rgba(255,229,176, 0.7);*/
+						margin: 8px 0;
+					   	margin-top: 0.5em;
+						padding: 10px 5px;
+						border-color: rgba(252,213,133, 0.5);
+                  		border-width: 1px;
+                  		border-radius: 6px;
+					}
+					#language {
+						margin-bottom: 0.85em;
+					}
+					.signup {
+						background-color: #FCD585;
+						color: rgba(36, 36, 34, 1);
+						/* color:#FCD585;
+						/*color: #FFE5B0;*/
+						border-radius: 30vw;
+						/*border: 1px solid rgba(255,229,176, 1);*/
+						border: 1px solid rgba(252,213,133, 0.5);
+						font-size: 5.5vw;
+						font-weight: 300;
+						display: block;
+						padding: 1vh 6vw 1vh 6vw ;
+						margin-top: 4vh;
+						text-align: center;
+						text-decoration: none;
+						margin-bottom: 0em;
+					}
+					.singup:hover {
+					 	background-color: #bca365;
+					}
+						
+/***************************************SIGN UP end*************************************/			
+	/****************************************mainscreen start**************************/
+.main {
+     width: 100%;
+	height:100%;
+    flex-grow: 1;
+    align-items: center;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+			.logo {
+				max-width: 80%;
+    			max-height: 80%;
+			}
+			#onlinebar {
+				color: #ffd98e;
+				font-size: 5vw;
+				margin-top: 0.5em;
+				margin-bottom: 1.5em;
+				font-weight: 100;
+			}
+			.loginbtn{
+				background: #ffd98e;
+				color: rgba(28, 24, 21, 1);
+				border-radius: 50px;
+				border: 1px solid #ffd98e;
+				font-size: 7vw;
+				font-weight: 300;
+				display: block;
+				padding: 1.4vh 11vw 1.4vh 11vw ;
+				margin-top: 1.5em;
+				text-align: center;
+				text-decoration: none;
+			}
+			.loginbtn:hover {
+			 	background-color: #bca365;
+			}
+				.loginbtnafter {
+					background: #ffd98e;
+					color: rgba(28, 24, 21, 1);
+					border-radius: 6px;
+					border: 1px solid #ffd98e;
+					font-size: 7vw;
+					font-weight: 300;
+					display: block;
+					padding: 1.5vh 11vw 1.5vh 11vw ;
+					margin-top: 1.5em;
+					margin: 0 auto;
+					text-align: center;
+					text-decoration: none;
+				}
+							
+			.registerbtn {
+				background: rgba(28, 24, 21, 0.3);
+				color: #ffd98e;
+				border-radius: 50px;
+				border: 1px solid #ffd98e;
+				font-size: 7vw;
+				font-weight: 300;
+				display: block;
+				padding: 1.5vh 7vw 1.5vh 7vw;
+				text-align: center;
+				margin-top: 0.7em;
+				text-decoration: none;
+			}
+			.registerbtn:hover {
+			 	background-color: #bca365;
+			}
+				.rgstrbtnafter {
+					background: #bca365;
+					color: #f6d586;
+					border-radius: 6px;
+					border: 1px solid #ffd98e;
+					font-size: 7vw;
+					font-weight: 300;
+					display: block;
+					padding: 1.5vh 6vw 1.5vh 6vw;
+					text-align: center;
+					margin-top: 0.7em;
+					padding-top: 18px;
+					text-decoration: none;
+				}
+/****************************************mainscreen end**************************/
+
+/**************************************Samsung Tab2 SD start**********************************************/
+@media  screen and (min-width: 768px) and (max-width: 853px) {
+	.logo {
+		max-width: 60%;
+		max-height: 50%;
+	}
+	#onlinebar {
+		margin-bottom: 3vh;
+	}
+	.loginbtn{
+		margin-bottom: 0.5vh;
+		font-size: 4vw;
+		font-weight: 100;
+		padding: 1.4vh 7.3vw 1.4vh 7.3vw;
+	}
+	.registerbtn {
+		font-size: 4vw;
+		font-weight: 100;
+		padding: 1.5vh 5vw 1.5vh 5vw;
+	}
+/***************************************************popup***************************/
+	.authorization, .registration {
+		width: 60vw;
+		height: 75vh;
+	}
+ .registration {
+	width: 65vw;
+	height: 75vh;
+}
+	#boozertitle {
+		color: #FFE5B0;
+		font-size: 5vw;
+		font-weight: 100;
+		margin-bottom: 12vh;
+	}
+
+input[type="text"] {
+	font-size: 3vw;
+	font-weight: 300;
+	width: 45vw;
+	margin-top: 2vh;
+	color: grey;
+}
+.fpass{
+	font-size: 3vw;
+	margin-top: 3vh;
+}
+.checkbox {
+	margin-top: 1vh;
+	margin-left: -29vw;
+}
+input[type=checkbox], input[type=radio] {display: none;}
+input[type=checkbox] + label:before {
+	font-size: 2.7vw;   
+}
+input[type=checkbox]:checked + label:before {
+	color: #FFE5B0;
+}
+.signin {
+	border-radius: 50px;
+	font-size: 3.5vw;
+	font-weight: 100;
+	padding: 1vh 4.5vw 1vh 4.5vw ;
+	margin-top: 8vh;
+}
+							#registertitle {
+								margin-bottom: 5vh;
+								margin-top: 0vh;
+								color: #FFE5B0;
+								font-weight: 100;
+								font-size: 35px;
+							}							
+								select {
+									font-size: 3vw;
+									width: 46.3vw;
+								}
+								option {
+								font-size: 3vw;
+								}
+								option[selected] {
+									font-size: 3vw;
+								}
+								#EEmail3, #NName {
+									margin-top: 2.5vh;
+								}
+								#NName {
+									margin-bottom: 1.4vh;
+								}
+								#selectsex, #language {
+									font-size: 3vw;
+									margin-bottom: 0vh;
+									padding: 10px 5px;
+								}
+									#language {
+										margin-bottom: 0vh;
+								}
+					.signup {
+						font-size: 25px;
+						font-weight: 100;
+						padding: 1vh 4.5vw 1vh 4.5vw ;
+						margin-top: 5vh;
+						margin-bottom: 0em;
+					}
+			
+}
+@media  screen and (min-width: 1024px) and (max-width: 1024px) {
+	.logo {
+		max-width: 60%;
+		max-height: 50%;
+	}
+	#onlinebar {
+		font-size: 3vw;
+		margin-bottom: 2vh;
+	}
+	.loginbtn{
+		margin-bottom: 0.5vh;
+		font-size: 2.5vw;
+		font-weight: 100;
+		padding: 1.4vh 5vw 1.4vh 5vw;
+	}
+	.registerbtn {
+		font-size: 2.5vw;
+		font-weight: 100;
+		padding: 1.5vh 3.5vw 1.5vh 3.5vw;
+	}
+	/***************************************************popup***************************/
+	.authorization {
+		width: 40vw;
+		height: 75vh;
+	}
+ .registration {
+	width: 45vw;
+	height: 85vh;
+}
+	#boozertitle {
+		color: #FFE5B0;
+		font-size: 4vw;
+		margin-top: 0vh;
+		margin-bottom: 10vh;
+	}
+
+input[type="text"] {
+	font-size: 2.2vw;
+	width: 32vw;
+	margin-top: 2vh;
+}
+.fpass{
+	font-size: 2vw;
+	margin-top: 3vh;
+}
+.checkbox {
+	margin-top: 1vh;
+	margin-left: -21vw;
+}
+input[type=checkbox], input[type=radio] {display: none;}
+input[type=checkbox] + label:before {
+	font-size: 1.7vw;   
+}
+input[type=checkbox]:checked + label:before {
+	color: #FFE5B0;
+}
+.signin {
+	border-radius: 50px;
+	border: 0.5px solid rgba(255,229,176, 1);
+	font-size: 2.5vw;
+	font-weight: 100;
+	padding: 1.5vh 3vw 1.5vh 3vw ;
+	margin-top: 8vh;
+}
+							#registertitle {
+								margin-bottom: 3vh;
+								margin-top: 1vh;
+								color: #FFE5B0;
+								font-weight: 100;
+								font-size: 35px;
+							}							
+								select {
+									font-size: 2.2vw;
+									width: 33vw;
+								}
+								option {
+								font-size: 3vw;
+								}
+								option[selected] {
+									font-size: 3vw;
+								}
+								#EEmail3, #NName {
+								
+								}
+								#NName {
+									
+								}
+								#selectsex, #language {
+									font-size: 2.2vw;
+								
+									padding: 10px 5px;
+								}
+									#language {
+										margin-bottom: 2.5vh;
+								}
+					.signup {
+						font-size: 25px;
+						font-weight: 100;
+						padding: 1vh 3vw 1vh 3vw ;
+						margin-top: 4vh;
+						margin-bottom: 0em;
+					}
+
+}
+/**************************************Samsung Tab2 SD end**********************************************/

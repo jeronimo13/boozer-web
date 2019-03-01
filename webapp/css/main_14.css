@@ -1,0 +1,228 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	background: url(../img/2588.jpg) center center / cover; 
+	height: 100%;
+	position: relative;
+}
+footer, header {
+	flex: 0 0 auto;
+   background: rgba(36, 36, 34, 1);
+   	border-width: 1px;
+}
+header {
+		 /*border-bottom-color: rgba(252, 213, 133, 0.5);
+		 border-bottom-style: solid;*/
+		 background-color: transparent;
+}
+footer {
+          border-top-color: rgba(252, 213, 133, 0.5);
+          border-top-style: solid;
+}          
+		div::-webkit-scrollbar {width: 0em; height: 0em;}
+		div::-webkit-scrollbar-track {
+			-webkit-box-shadow: inset 0 0 0px rgba(185,156,97,0.6);
+		    border-radius: 10px;
+		}
+		div::-webkit-scrollbar-thumb {
+		    border-radius: 10px;
+		    -webkit-box-shadow: inset 0 0 6px rgba(185,156,97,0.9);
+		}
+		div::-webkit-scrollbar-corner {
+		  background: none;
+		}
+ 
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	background: rgba(247, 247, 247, 0.1);
+ }
+	    .main {
+	        width: 100%;
+	        flex-grow: 1;
+	        align-items: center;
+	        margin: 0px auto;
+	        display: flex;
+	        flex-direction: column;
+	        flex-wrap: nowrap;
+	        justify-content: space-around;
+	        margin: 0px auto;
+	  	}
+		.second {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			flex-grow: 1;
+			padding: 0vh 0vw 0vh 0vw;
+			box-sizing: border-box;
+			background: url(../img/avatarspeak.png) center center / cover; 
+			/*border: 1px solid red;*/
+		}
+		.avatarspeakname {
+			font-weight: 500;
+			font-size: 6vw;
+			color: #fcd585;
+			margin-top: 5vh;
+			position: fixed;
+			z-index: 20;
+		}
+		.avatarspeak {
+			width: 100vw;
+			height: auto: ;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		#avatarspeak {
+			max-width: 100%;
+			max-height: auto;
+		}
+		.avatarspeak2 {
+			position: fixed;
+			right: 0;
+			top: 0;
+			width: 25vw;
+			height: 30vh;
+		}
+		.avatarspeak2 img {
+			max-height: 100%;
+			max-width: 100%;
+		}
+
+
+		.buttons {
+			position: fixed;
+			z-index: 20;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: center;
+			margin-top: 78vh;
+		}
+		.video, .pcmobile, .callend, .mute, .inout {
+			margin-left: 2.5vw;
+			margin-right: 2.5vw;
+			height: 7vh;
+			width: auto;
+		}
+		.video img, .pcmobile img, .callend img, .mute img, .inout img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+		.callduration {
+			font-weight: 500;
+			font-size: 6vw;
+			color: #605246;
+			margin-top: 86vh;
+			position: fixed;
+			z-index: 20;
+		}
+
+						
+.lowbar {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-around;
+align-items: center;
+height: 7vh;
+box-sizing: border-box;
+padding-bottom: 1vh;
+padding-top: 1vh;
+}
+	.btnlow1, .btnlow2, .btnlow3, .btnlow4 {
+		margin-left: 0vw;
+		margin-right: 0vw;
+			display: inline-block;
+	}	
+
+	
+	.backtoms, .notibtn, .mesbtn, .facebtn {
+		height: 5vh;
+		
+		
+
+	}
+
+	#logobar, #noti, #chat, #face {
+		max-width: 100%;
+		max-height: 100%;
+	}	
+		#noti_counter2 {
+	        display:block;
+	        position:absolute;
+	        background:green;
+	        color:#FFF;
+	        font-size: 3vw;
+	        font-weight: normal;
+	 		margin:-5vh 0 0 12vw;
+	      	width: 4vw;
+	        height: 4vw;
+	        border-radius: 10px; 
+	        z-index: 0;
+	        text-align: center;
+	    }
+	    #noti_counter3 {
+	        display:block;
+	        position:absolute;
+	        background:green;
+	        color:#FFF;
+	        font-size: 3vw;
+	        font-weight: normal;
+	 		margin:-5vh 0 0 8vw;
+	        width: 4vw;
+	        height: 4vw;
+	        border-radius: 10px; 
+	        z-index: 0;
+	        text-align: center;
+	    }
+	    break {
+  flex-basis: 100%;
+  width: 0px; 
+  height: 0px; 
+  overflow: hidden;
+}	
+/**************************************Samsung Tab2 SD start**********************************************/
+
+@media  screen and (min-width: 768px) and (max-width: 853px) {
+	.buttons {
+		width: 70vw;
+		margin-top: 70vh;
+	}
+	.avatarspeakname {
+		font-weight: 300;
+		font-size: 4vw;
+		margin-top: 3vh;
+	}
+		.avatarspeak2 {
+			width: 20vw;
+			height: 25vh;
+		}
+		.video, .pcmobile, .callend, .mute, .inout {
+			margin-left: 3vw;
+			margin-right: 3vw;
+			height: 8vh;
+		}
+		.callduration {
+			font-size: 4vw;
+			margin-top: 78vh;
+	}
+@media  screen and (min-width: 1024px) and (max-width: 1024px) {
+	.buttons {
+		width: 70vw;
+	}
+	
+	}	
+
+/**************************************Samsung Tab2 SD end**********************************************/

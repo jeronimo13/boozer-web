@@ -1,0 +1,453 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+}
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background: url(../img/back.jpg) center center / cover; 
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+footer, header {
+	flex: 0 0 auto;
+	background: rgba(28, 28, 28, 1);
+	border-width: 1px;
+}
+footer {
+  border-top-color: rgba(252, 213, 133, 0.1);
+  border-top-style: solid;
+}
+	div::-webkit-scrollbar {width: 0em; height: 0em;}
+	div::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 0px rgba(185,156,97,0.6);
+	    border-radius: 10px;}
+	div::-webkit-scrollbar-thumb {
+	    border-radius: 10px;
+	    -webkit-box-shadow: inset 0 0 6px rgba(185,156,97,0.9);}
+	div::-webkit-scrollbar-corner {
+	  background: none;}
+
+.hidden-menu {
+  display: block;
+  position: fixed;
+  list-style:none;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 180px;
+  background-color: rgba(45,39,39,0.99);
+  height: 100%;
+  top: 0;
+  right: -200px;
+  transition: right .2s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  border-left: 1px solid rgba(255, 218, 143, 0.2);
+}
+.hidden-menu-ticker {
+  display: none;
+}
+.btn-menu {
+  color: red;
+  background-color: none;
+  padding: 5px;
+  position: fixed;
+  top: 5px;
+  right: 0;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 20px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+  display: block;
+  height: 3px;
+  width: 27px;
+  background-color: #ffda8f;
+  margin: 7px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+  border-radius: 5px;
+}
+.btn-menu span.first1 {
+  margin-top: 0;
+  margin-right: 10px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu {
+  right: 0;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  right: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.first1 {
+  -webkit-transform: rotate(45deg);
+  top: 10px;
+ }
+.hidden-menu-ticker:checked ~ .btn-menu span.second1 {
+  opacity: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.third1 {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}
+.first, .second, .third, .forth, .fifth, .sixth, .seventh {
+	width: 47vw;
+	display: flex;
+	align-items: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	}
+.first {
+	margin-top: 3em;
+	}
+#hm, #wb, #dl, #ft, #lg, #tm, #fq {
+	text-decoration: none;
+	color: #ffda8f;
+	font-size: 18px;
+	font-weight: 100;
+	margin-left: 1em;
+	letter-spacing: 1px;
+	font-family: sans-serif;
+	font-style: normal;
+}
+#dimg {
+	height: 22px;
+	margin-left:0.5em;
+}
+/********************************************Menu end********************************************/
+	.wrapper {
+  		display: flex;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+		background: rgba(45,39,39, 0.8);
+	}
+ 			.menuin {
+		    	height: 5%;
+				color: rgba(45,39,39, 0.8);
+				visibility: hidden;
+			}
+			 	.data{
+			 		width: 100%;
+					flex-grow: 1;
+			 		height: 100vh;
+					display: flex;
+					flex-direction: column;
+					flex-wrap: nowrap;
+					justify-content: center;
+					align-items: center;
+				}
+					.first2, .second2, .third2 {
+						height: 32%;
+						display: flex;
+						flex-direction: column;
+						flex-wrap: nowrap;
+						align-items: center;
+						justify-content: flex-start;
+					}
+					.second2 {
+						height: 32%;
+					}
+												.photo {
+													height: 78%;
+													display: flex;
+													flex-direction: column;
+													flex-wrap: nowrap;
+													align-items: center;
+													justify-content: flex-start;
+												}
+												.photo img {
+													max-width: 100%;
+													max-height: 100%;
+												}
+												.title1 {
+													display: flex;
+													flex-direction: column;
+													flex-wrap: nowrap;
+													align-items: center;
+													justify-content: flex-start;
+													height: 22%;
+												}
+												#title1, #title2, #title3 {
+													background: none;
+													color: #ffda8f;
+													margin-top: 0.5vh;
+													font-size: 20px;
+													width: auto;
+													text-align: center;
+													text-decoration: none;
+													font-weight: 300;
+												}
+												#title1:hover, #title2:hover, #title3:hover {
+													background-color: rgba(45,39,39, 0.5);
+												}
+.lowbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background: rgba(28, 28, 28, 1);
+  font-weight: 100;
+  height: 5.7%;
+}
+	#copyright {
+		color: #f6d586;
+		font-size: 12px;
+		padding: 12px;
+		font-weight: 100;
+	}
+
+/*------------------------------------------Responsive sgs6 landspace-------------------------------------------*/
+@media  screen and (min-width: 415px) and (max-width: 649px) {
+	.android, .ios {
+		width: 25em;
+	}
+	.ios {
+		width: 26em;
+	}
+}
+
+/**************************************Samsung galaxy s8 ONLY!!!!!!!!!! My Test Lab landscape********************************************start*/
+@media  screen and (min-width: 692px) and (max-width: 692px) {
+	.android, .ios {
+		width: 25em;
+	}
+	.ios {
+		width: 26em;
+	}
+}
+/**************************************Samsung galaxy s8 ONLY!!!!!!!!!! My Test Lab landscape********************************************end*/
+	/**************************************Samsung Tab4 ONLY!!!!!!!!!!! My Test Lab**********************************************start*/
+@media  screen and (min-width: 712px) and (max-width: 712px) {
+	.android, .ios {
+		width: 18em;
+	}
+	.ios {
+		width:19.2em;
+	}
+	.data {
+		align-items: center;
+		margin-top: -4em;
+	}
+	.data1{
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: auto;
+	}
+	.main {
+		align-items: center;
+	}
+	#title {
+		font-size: 24px;
+		margin-bottom: 0em;
+		width: 90%;
+		margin: 0px auto;
+	}
+	.android {
+		margin-top: 0em;
+	}
+	#title2 {
+		margin-bottom: 0em;
+		padding: 10px 37px 10px 37px;
+	}
+	.first2, .second2 {
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+	}
+	#title1, #title2 {
+		margin-top: 2em;
+	}
+}
+/**************************************Samsung Tab4 ONLY!!!!!!!!!!! My Test Lab**********************************************end/
+	/**************************************Samsung Galaxy s9+ ONLY!!!!!!!!!!! My Test Lab**********************************************start*/
+@media  screen and (min-width: 740px) and (max-width: 740px) {
+	.android, .ios {
+		width: 20em;
+	}
+	.ios {
+		width:21.2em;
+	}
+	.data {
+		align-items: center;
+		margin-top: 2em;
+	}
+	.data1{
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: auto;
+	}
+	
+	#title {
+		font-size: 18px;
+		margin-bottom: 0em;
+		width: 90%;
+		margin: 0px auto;
+	}
+	.android {
+		margin-top: 5em;
+	}
+	#title2 {
+		margin-bottom: 3em;
+		padding: 10px 37px 10px 37px;
+	}
+	.first2, .second2 {
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+	}
+	#title1, #title2 {
+		margin-top: 1.5em;
+	}
+}
+	/**************************************Samsung Galaxy s9+ ONLY!!!!!!!!!!! My Test Lab**********************************************end*/
+/**************************************Samsung sgs9 ONLY!!!!!!!!!!! My Test Lab landscape*********************************************start*/
+@media  screen and (min-width: 798px) and (max-width: 798px) {
+	.android, .ios {
+		width: 25em;
+	}
+	.ios {
+		width: 26em;
+	}
+	.data {
+		align-items: center;
+		margin-top: 2em;
+	}
+	.data1{
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: auto;
+	}
+	.main {
+		align-items: flex-start;
+	}
+	#title {
+		font-size: 22px;
+		margin-bottom: 1em;
+	}
+	.android {
+		margin-top: 0em;
+	}
+	#title2 {
+		margin-bottom: 3em;
+		padding: 10px 37px 10px 37px;
+	}
+	.second2 {
+		
+		margin-top: 5em;
+	}
+	#title1, #title2 {
+		margin-top: 2em;
+	}
+}
+/**************************************Samsung sgs9 ONLY!!!!!!!!!!! My Test Lab landscape*********************************************end*/
+
+/**************************************Samsung Tab2 SD start**********************************************/
+@media  screen and (min-width: 768px) and (max-width: 853px) {
+	.hidden-menu {
+	  width: 33vw;
+	  right: -33vw;
+	}
+	#hm, #wb, #dl, #ft, #lg, #tm, #fq {
+		font-size: 26px;
+		margin-left: 3vw;
+	}
+	#dimg {
+		height: 28px;
+		margin-left:2vw;
+	}
+	.first2 {
+		margin-top: -2vh;
+	}
+
+}
+@media  screen and (min-width: 1024px) and (max-width: 1024px) {
+	.hidden-menu {
+	  width: 26vw;
+	  right: -26vw;
+	}
+	#hm, #wb, #dl, #ft, #lg, #tm, #fq {
+		font-size: 26px;
+		margin-left: 3vw;
+	}
+	#dimg {
+		height: 28px;
+		margin-left:2vw;
+	}
+	.data{
+		flex-direction: row;
+	}
+	.first2, .second2, .third2 {
+		width: 30%;
+		height: auto;
+	}
+	.photo {
+		width: 25vw;
+		height: auto;
+	}
+	#title1, #title2, #title3 {
+		margin-top: 1vh;
+		font-size: 2.5vw;
+		font-weight: 100;
+	}
+	
+}
+/**************************************Samsung Tab2 SD end**********************************************/
+
+/**************************************Samsung Tab4 ONLY!!!!!!!!!!! My Test Lab landscape*********************************************start*/
+@media  screen and (min-width: 1138px) and (max-width: 1139px) {
+	.android, .ios {
+		width: 10.6em;
+	}
+	.ios {
+		width:11.3em;	
+	}
+	.data {
+		align-items: center;
+		margin-top: -4em;
+	}
+	.data1{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		width: auto;
+	
+	}
+	.main {
+		align-items: center;
+		justify-content: center;
+	}
+	#title {
+		font-size: 24px;
+		margin-bottom: 0em;
+	}
+	.android {
+		margin-top: 0em;
+	}
+	#title1 {
+		padding: 8px 30px 8px 30px;
+	}
+	#title2 {
+		margin-bottom: 0em;
+		padding: 8px 30px 8px 30px;
+	}
+	.first2, .second2 {
+		margin-left: 3em;
+		margin-right: 3em;
+	}
+	#title1, #title2 {
+	margin-top: 1em;
+	font-size: 18px;
+	}
+}
+/**************************************Samsung Tab4 ONLY!!!!!!!!!!! My Test Lab landscape*********************************************end*/

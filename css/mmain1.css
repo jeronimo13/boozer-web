@@ -1,0 +1,594 @@
+* {
+margin: 0;
+padding: 0;
+}
+body {
+width: 100%;
+}
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background: url(../img/back.jpg) center center / cover; 
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+footer, header {
+  flex: 0 0 auto;
+  background: rgba(28, 28, 28, 1);
+  border-width: 1px;
+}
+footer {
+  border-top-color: rgba(252, 213, 133, 0.1);
+  border-top-style: solid;
+}   
+div::-webkit-scrollbar {width: 0em;}
+div::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 0px rgba(185,156,97,0.6);
+    border-radius: 10px;
+}
+div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(185,156,97,0.9);
+}
+div::-webkit-scrollbar-corner {
+  background: none;
+}
+.hidden-menu2 {
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: center;
+		  position: fixed;
+		  list-style:none;
+		  margin: 0;
+		  box-sizing: border-box;
+		  width: 100vw;
+		 /* background-color: rgba(40,39,39,1);*/
+		 /*background: rgba(36, 36, 34, 1);*/
+		  height: 100%;
+		  top: 0;
+		  right: -100vw;
+		  transition: right .3s;
+		  z-index: 20;
+		  -webkit-transform: translateZ(0);
+		  -webkit-backface-visibility: hidden;
+		  /*background: url(../img/backpopup3.png)  center center / cover;*/ 
+		}
+ .hidden-menu-ticker2 {
+		  display: none;
+		}
+ .btn-menu2 {
+		  color: red;
+		  background-color: none;
+	   	  cursor: pointer;
+		  transition: left .23s;
+		  z-index: 3;
+		  -webkit-transform: translateZ(0);
+		  -webkit-backface-visibility: hidden;
+		}
+		
+		.hidden-menu-ticker2:checked ~ .btn-menu2 {
+		  right: 0;
+		}
+		.hidden-menu-ticker2:checked ~ .hidden-menu2 {
+		  right: 0;
+		}
+
+.hidden-menu {
+  display: block;
+  position: fixed;
+  list-style:none;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 180px;
+  background-color: rgba(45,39,39,0.99);
+  height: 100%;
+  top: 0;
+  right: -200px;
+  transition: right .2s;
+  z-index: 20;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  border-left: 1px solid rgba(255, 218, 143, 0.2);
+}
+.hidden-menu-ticker {
+  display: none;
+}
+.btn-menu {
+  color: red;
+  background-color: none;
+  padding: 5px;
+  position: fixed;
+  top: 5px;
+  right: 0;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 21;
+  width: 20px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+  display: block;
+  height: 3px;
+  width: 27px;
+  background-color: #ffda8f;
+  margin: 7px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+  border-radius: 5px;
+
+}
+.btn-menu span.first1 {
+  margin-top: 0;
+  margin-right: 10px;
+
+}
+.hidden-menu-ticker:checked ~ .btn-menu {
+  right: 0;
+
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  right: 0;
+
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.first1 {
+  -webkit-transform: rotate(45deg);
+  top: 10px;
+  }
+
+.hidden-menu-ticker:checked ~ .btn-menu span.second1 {
+  opacity: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.third1 {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}
+
+.first, .firstt, .second, .third, .forth, .fifth, .sixth, .seventh {
+	width: 47vw;
+	display: flex;
+	align-items: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+.first {
+	margin-top: 3em;
+	}
+#hm, #wb, #dl, #ft, #lg, #tm, #fq {
+	text-decoration: none;
+	color: #454241;
+	font-size: 18px;
+	font-weight: 100;
+	margin-left: 1em;
+	letter-spacing: 1px;
+	font-family: sans-serif;
+	font-style: normal;
+}
+#hm, #lg {
+	color: #ffda8f;
+}
+
+#dimg {
+	height: 22px;
+	margin-left:0.5em;
+}
+		
+		
+/************************************************Popup menu end**************************/	 
+.registration {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 85vw;
+
+	background: rgba(36, 36, 34, 1);
+	border: 1px solid rgba(252, 213, 133, 0.3);
+	border-radius: 6px;
+}
+ .registration {
+	
+	width: 85vw;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	
+}
+
+				
+		
+/***************************************SIGN UP start*************************************/			
+	#registertitle {
+		margin-bottom: 2vh;
+		margin-top: 0vh;
+		/*color: #FFE5B0;*/
+		color:#FCD585;
+		letter-spacing: 1px;
+		font-weight: 300;
+		font-size: 7vw;
+	}
+	/*		input {
+				outline: none;
+			}*/
+			input[type="text"], select, textarea {
+		/*		border: none; 
+				outline: none;*/
+				font-family: 'Roboto', sans-serif;
+				background: rgba(28, 24, 21, 0.2);
+				 color:#FCD585;
+				font-size: 5vw;
+				font-weight: 100;
+				 border: 1px solid rgba(252,213,133, 0.5);
+                 border-radius: 6px;
+				width: 64vw;
+				margin: 8px 0px;
+			   	margin-top: 0.6em;
+				padding: 10px 10px;
+			}
+			textarea {
+				resize: none;
+			}
+				select {
+				
+					color: grey;
+					font-size: 5vw;
+					width: 70vw;
+				}
+				option {
+					background: rgba(252, 213, 133, 0.1);
+					color: rgba(45,39,39,1);
+					font-size: 5vw;
+				}
+				option[selected] {
+					color: grey;
+					font-size: 5vw;
+				}
+					#EEmail2, #NName {
+						margin-top: 0em;
+					}
+				
+					#selectsex, #language {
+					/*border: none; 
+						outline: none;
+						background-color: transparent;*/
+						background: rgba(28, 24, 21, 0.2);
+						font-size: 5vw;
+						font-weight: 100;
+						border-style: solid;
+						/*border-width: 0px;
+						/*border-bottom: 1px solid rgba(255,229,176, 0.7);*/
+						margin: 8px 0;
+					   	margin-top: 0.5em;
+						padding: 10px 5px;
+						border-color: rgba(252,213,133, 0.5);
+                  		border-width: 1px;
+                  		border-radius: 6px;
+					}
+					#language {
+						margin-bottom: 0.85em;
+					}
+					.signup {
+						background-color: #FCD585;
+						color: rgba(36, 36, 34, 1);
+						/* color:#FCD585;
+						/*color: #FFE5B0;*/
+						border-radius: 30vw;
+						/*border: 1px solid rgba(255,229,176, 1);*/
+						border: 1px solid rgba(252,213,133, 0.5);
+						font-size: 5.5vw;
+						font-weight: 300;
+						display: block;
+						padding: 1vh 6vw 1vh 6vw ;
+						margin-top: 4vh;
+						text-align: center;
+						text-decoration: none;
+						margin-bottom: 0em;
+					}
+					.singup:hover {
+					 	background-color: #bca365;
+					}
+						
+/***************************************SIGN UP end*************************************/
+		
+			.wrapper {
+		  		display: flex;
+				flex-direction: column;
+				height: 100%;
+				width: 100%;
+				background: rgba(45,39,39, 0.8);
+			}
+			.main {
+			 		height: 100%;
+			 		width: 100vw;
+			        align-items: center;
+			        margin: 0px auto;
+			        display: flex;
+			        flex-direction: row;
+			        flex-wrap: wrap;
+			        justify-content: center;
+			        overflow-y: auto;
+			    }
+			    .data {
+			 		width: 100%;
+					padding: 0px;
+					border-radius: 6px;
+					display: flex;
+					flex-direction: column;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: center;
+				}
+
+				.logomobile {
+					display: inherit;
+					width: 17em;
+				}
+				#onlinebar {
+					display: inherit;
+					color: #ffda8f;
+					font-size: 24px;
+					margin-top: 0.5em;
+					font-weight: 500;
+				}
+					.Features {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+					}
+					#title {
+						color: #ffda8f;
+						font-size: 30px;
+						font-weight: 500;
+						text-align: center;
+						margin-top: 1em;
+					}
+					#title3 {
+						color: #ffda8f;
+						font-size: 15px;
+						font-weight: 300;
+						text-align: center;
+						margin-top: 7vh;
+						width: 95vw;
+					}
+						#login36 {
+							display: inherit;
+							padding: 8px 30px 8px 30px;
+							border: 1px solid #ffda8f;
+							border-radius: 30px;
+							background: #ffda8f;
+							color: #2d2727;
+							text-decoration: none;
+							margin-top: 3vh;
+							font-size: 25px;
+							font-family: roboto;
+							font-weight: 300;
+							z-index: 0;
+
+						}
+
+.lowbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background: rgba(28, 28, 28, 1);
+}
+	#copyright {
+		color: #ffda8f;
+		font-size: 12px;
+		padding: 12px;
+		font-weight: 100;
+	}
+	.menupopup {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+
+/*------------------------------------------Responsive-------------------------------------------*/
+
+@media  screen and (min-width: 415px) and (max-width: 690px) {
+.hidden-menu {
+  display: block;
+  position: fixed;
+  list-style:none;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 50vw;
+  background-color: rgba(45,39,39,0.99);
+  height: 100%;
+  top: 0;
+  right: -50vw;
+  transition: right .2s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  border-left: 1px solid rgba(255, 218, 143, 0.2);
+}
+	
+		
+}
+/**************************************Samsung galaxy s8 My Test Lab**********************************************/
+@media  screen and (min-width: 691px) and (max-width: 692px) {
+	.logomobile {
+		width: 10em;
+		margin-top: -1.5em;
+	}
+	#title {
+		color: #ffda8f;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0.5em;
+	}
+	#login36 {
+		margin-top: 1em;
+		font-size: 14px;
+		font-family: roboto;
+		padding: 5px 20px 5px 20px;
+		border-radius: 50px;
+	}
+	#onlinebar {
+		color: #ffda8f;
+		font-size: 15px;
+		margin-top: 0.3em;
+	
+}
+}
+	/**************************************Samsung Tab4 My Test Lab**********************************************/
+@media  screen and (min-width: 693px) and (max-width: 768px) {
+	.logomobile {
+		width: 30em;
+		margin-top: -7em;
+	}
+	#title {
+		color: #ffda8f;
+		font-size: 45px;
+		text-align: center;
+		margin-top: 1.3em;
+	}
+	#login36 {
+		margin-top: 2.5em;
+		font-size: 30px;
+		font-family: roboto;
+		padding: 13px 50px 13px 50px;
+		border-radius: 50px;
+	}
+	#onlinebar {
+		color: #ffda8f;
+		font-size: 35px;
+		margin-top: 0.7em;
+	
+}
+}
+/**************************************Samsung Tab2 My Test Lab**********************************************/
+@media  screen and (min-width: 768px) and (max-width: 853px) {
+	.hidden-menu {
+	  width: 33vw;
+	  right: -33vw;
+	}
+	#hm, #wb, #dl, #ft, #lg, #tm, #fq {
+	font-size: 26px;
+	margin-left: 3vw;
+	}
+#dimg {
+	height: 28px;
+	margin-left:2vw;
+}
+	.logomobile {
+		width: 28em;
+		margin-top: -5em;
+	}
+	#title {
+		color: #ffda8f;
+		font-size: 40px;
+		text-align: center;
+		margin-top: 1.5em;
+	}
+	#login36 {
+		margin-top: 2.5em;
+		font-size: 30px;
+		font-family: roboto;
+		padding: 12px 40px 12px 40px;
+		border-radius: 60px;
+	}
+	#onlinebar {
+		color: #ffda8f;
+		font-size: 30px;
+		margin-top: 0.5em;
+	}
+}
+
+@media  screen and (min-width: 854px) and (max-width: 1024px) {
+	.logomobile {
+		width: 30em;
+		margin-top: 3em;
+	}
+	#title {
+		color: #ffda8f;
+		font-size: 45px;
+		text-align: center;
+		margin-top: 2em;
+	}
+	#login36 {
+		margin-top: 2em;
+		font-size: 30px;
+		font-family: roboto;
+	}
+	#onlinebar {
+		color: #ffda8f;
+		font-size: 35px;
+		margin-top: 0.5em;
+	}
+}
+/**************************************Samsung Tab2 My Test Lab**********************************************/
+@media  screen and (min-width: 1024px) and (max-width: 1024px) {
+	.hidden-menu {
+	  width: 26vw;
+	  right: -26vw;
+	}
+	#hm, #wb, #dl, #ft, #lg, #tm, #fq {
+	font-size: 26px;
+	margin-left: 3vw;
+	}
+	#dimg {
+		height: 28px;
+		margin-left:2vw;
+	}
+	.logomobile {
+		width: 22em;
+		margin-top: -0em;
+	}
+	#title {
+		color: #ffda8f;
+		font-size: 30px;
+		text-align: center;
+		margin-top: 1em;
+	}
+	#login36 {
+		margin-top: 1.5em;
+		font-size: 30px;
+		font-family: roboto;
+		padding: 10px 35px 10px 35px;
+		border-radius: 60px;
+	}
+	#onlinebar {
+		color: #ffda8f;
+		font-size: 30px;
+		margin-top: 0.5em;
+	}
+}
+/**************************************Samsung Tab4 My Test Lab**********************************************/
+
+@media  screen and (min-width: 1138px) and (max-width: 1139px) {
+	.logomobile {
+		width: 20em;
+		margin-top: -4.5em;
+	}
+	#title {
+		color: #ffda8f;
+		font-size: 30px;
+		text-align: center;
+		margin-top: 0.7em;
+	}
+	#login36 {
+		margin-top: 1em;
+		font-size: 25px;
+		font-family: roboto;
+		padding: 8px 35px 8px 35px;
+		border-radius: 60px;
+	}
+	#onlinebar {
+		color: #ffda8f;
+		font-size: 25px;
+		margin-top: 0.5em;
+	}
+}

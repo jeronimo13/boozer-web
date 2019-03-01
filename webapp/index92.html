@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>Boozer</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+			<link rel="stylesheet" href="css/main_92.css">
+			<link rel="icon" href="img/icon.png" type="image/png">
+		</head>
+		<body>
+			<div class="wrapper">
+				<header>
+					<div class="menu">
+						<a href="#profile-prvw" onclick="myFunction()">
+							<div class="photoholder">
+								<img src="img/profile.png" id="photoholderup"></img>
+							</div>
+						</a>
+						<a class="username">Pinta</a>
+					</div>		
+				</header>
+					<div class="main">
+
+				<div class="chatscreen" id="chatscreen">	
+					<div class="chat-history">
+
+						<ul class="massagesspace" id="massagesspace">
+							<div class="me1">
+								<span class="message-data-time1" >10:10 AM</span>
+								<div class="memsg">
+									<li class="me">Are you going on Saturday?</li>
+								</div>
+								<span class="message-data-time1" >Drunk</span>
+							</div>
+		          			<div class="him1">
+								<span class="message-data-time2" >10:12 AM</span>
+		          				<div class="himmsg">
+		          					<li class="him">Yeah. I heard it's going to be a lot of fun!)</li></li>
+		          				</div>
+		          				<span class="message-data-time2" >Poured</span>
+		          			</div>
+
+		          			<div class="me1">
+								<span class="message-data-time1" >10:15 AM</span>
+								<div class="memsg">
+									<li class="me">Really? Well, what time does it start?</li>
+								</div>
+								<span class="message-data-time1" >Drunk</span>
+							</div>
+		          			<div class="him1">
+								<span class="message-data-time2" >10:22 AM</span>
+		          				<div class="himmsg">
+		          					<li class="him">9:00 pm. I really think you should go!!! </li>
+		          				</div>
+		          				<span class="message-data-time2" >Poured</span>
+		          			</div>
+		          			<div class="me1">
+								<span class="message-data-time1" >10:26 AM</span>
+								<div class="memsg">
+									<li class="me">How do you know it's going to be so fun?</li>
+								</div>
+								<span class="message-data-time1" >Drunk</span>
+							</div>
+		          			<div class="him1">
+								<span class="message-data-time2" >10:27 AM</span>
+		          				<div class="himmsg">
+		          					<li class="him">This party is going to have a DJ, food, and drinks!)</li>
+		          				</div>
+		          				<span class="message-data-time2" >Poured</span>
+		          			</div>
+		          			<div class="me1">
+								<span class="message-data-time1" >10:32 AM</span>
+								<div class="memsg">
+									<li class="me">Wow, that does sound like it's going to be fun...</li>
+								</div>
+								<span class="message-data-time1" >Drunk</span>
+							</div>
+		          			<div class="him1">
+								<span class="message-data-time2" >10:33 AM</span>
+		          				<div class="himmsg">
+		          					<li class="him">So am I going to see you at the party???</li>
+		          				</div>
+		          				<span class="message-data-time2" >Poured</span>
+		          			</div>
+		          			<div class="me1">
+								<span class="message-data-time1" >10:35 AM</span>
+								<div class="memsg">
+									<li class="me">Yeah, I will be there.</li>
+								</div>
+								<span class="message-data-time1" >Drunk</span>
+							</div>
+		          			
+						</ul>
+					</div> <!--chat-history end-->
+					<div class="chat-message">
+						<textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="1"></textarea>
+						<a href="">
+							<div class="sent">
+								<img src="img/sent.png" id="sent"></img>
+							</div>
+						</a>
+					</div>
+				</div> <!--chatscreen end-->
+			</div><!--main end-->
+			<footer>
+					<div class="lowbar">
+						<a class="btnlow1" href="index3.html">
+							<div class="backtoms">
+								<img src="img/logobar.png" id="logobar" title="Back to main screen">
+							</div>
+						</a>
+						<a class="btnlow2" href="index13.html">
+							<div class="notibtn">
+								<img src="img/2beersbarspan.png" title="Notifications" id="noti"></img>
+							</div>
+						</a> 
+						<a class="btnlow3" href="index91.html" title="Chat">
+							<div class="mesbtn">
+								<img src="img/messagespan.png" id="chat"></img>
+							</div>
+						</a>
+						<a class="btnlow4" title="My friends" href="index7.html">
+							<div class="facebtn">
+								<img src="img/face.png" id="face"></img>
+							</div>
+						</a>
+					</div>
+			</footer>
+			<!--popup screen start-->
+					<a href="#x" class="overlay" id="profile-prvw"></a>
+						<div class="screenup">
+							<div class="screenupflex">
+								<div class="closediv">
+									<a class="close" href="#close" onclick="myFunction()"></a>
+								</div>
+								<div class="avatar">
+									<img src="img/avatar.png" id="photoholderform"></img></div>
+								<div class="dudenamepopup">
+									<a class="usernamep">Pinta</a>
+									<div class="detailspopup">	
+										<a class="useragep">33 y.o.</a>,
+										<a class="occupationp">lawyer</a>
+										<a class="fromp">from</a>
+										<a class="cityp">New York </a>,
+										<a class="countryp">USA</a>
+									</div>
+								</div>	
+								<div class="informationpopup">
+									<div class="title-blockpopup">
+										<a class="Langp">Languages:</a>
+										<a class="Instsp">Interests:</a>
+									</div>
+									<div class="info-blockpopup">
+										<a class="Languagesp">English</a>
+										<a class="Interestsp">Cars, music, motobikes</a>
+									</div>
+								</div>
+								<a class="Aboutmep">"Wanna get drunk!"</a>				
+								<div class="Action">
+									<div class="writep">
+										<a id="writemassagep" href="index92.html">
+											<div class="message"><img src="img/message.png"></img>
+											</div>
+										</a>
+									</div>
+									<div class="vcallp">
+										<a id="vcall1p" href="index14.html">
+											<div class="vcall">
+												<img src="img/vcall.png"></img>
+											</div>
+										</a>
+									</div>
+									<div class="callp">
+										<a id="call1p" href="index14.html">
+											<div class="call">
+												<img src="img/call.png"></img>
+											</div>
+										</a>
+									</div>
+									<div class="dudedeletep">
+										<a class="dudedeletebtnp" href="#dudedelete">
+											<div class="dudedelete">
+												<img src="img/dudedelete.png"></img>
+											</div>
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+			<!--popup screen end-->
+
+	</div> <!--wrapper end-->
+
+	<script>
+		function myFunction() {
+			var element = document.getElementById("chatscreen");
+			element.classList.toggle("alerting");
+			}
+	</script>
+
+	</body>
+		
+
+
+	</html>

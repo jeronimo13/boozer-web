@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>Boozer</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+			<link rel="stylesheet" href="css/main_3.css">
+			<link rel="icon" href="img/icon.png" type="image/png">
+			<meta name="mobile-web-app-capable" content="yes">
+			</head>
+		<body>
+
+		 	<div class="wrapper" id="wrapper">
+
+				<header>
+<!--14%-->			<div class="menu">
+						<a href="#profile" onclick="myFunction()" title="My profile"><img src="img/profile.png" id="photoholderup"></img></a>
+						<a class="status">"Wanna get drunk!"</a>
+					</div>	
+				</header>
+
+						<div class="main" id="main">
+<!--32%-->					<div class="second">
+								<img src="img/logo.png" class="logo"></img>
+							</div>
+<!--10%-->					<a href="#selectstatus" onclick="myFunction()">
+								<div class="wannadrinkfirst">
+									<img src="img/WDrink.png" class="wd"><img>
+								</div>
+							</a>
+<!--37%-->					<div class="buttons">
+								<div class="buttons12">	
+									<a href="index10.html" id="DO">
+										<div class="online">
+											<img src="img/online.png"></img>
+										</div>
+									</a>
+									<a href="index8.html" id="DN">
+										<div class="nearby">
+											<img src="img/nearby.png"></img>
+										</div>
+									</a>
+								</div>
+								<div class="buttons34">
+									<a href="index11.html" id="AR">
+										<div class="events">
+											<img src="img/events.png"></img>
+										</div>	
+									</a>
+									<a href="index1.html" id="CR">
+										<div class="event">
+											<img src="img/chatr.png"></img>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div> <!-- end main-->
+				
+				<footer>
+<!--37%-->			<div class="lowbar">
+						<a class="btnlow1" href="index3.html">
+							<div class="backtoms">
+								<img src="img/logobar.png" id="logobar" title="Back to main screen">
+							</div>
+						</a>
+						<a class="btnlow2" href="index13.html">
+							<div class="notibtn">
+								<img src="img/2beersbarspan.png" title="Notifications" id="noti"></img>
+							</div>
+						</a> 
+						<a class="btnlow3" href="index91.html" title="Chat">
+							<div class="mesbtn">
+								<img src="img/messagespan.png" id="chat"></img>
+							</div>
+						</a>
+						<a class="btnlow4" title="My friends" href="index7.html">
+							<div class="facebtn">
+								<img src="img/face.png" id="face"></img>
+							</div>
+						</a>
+					</div>
+				</footer>	
+			</div> <!-- end wrapper-->	
+<!--popup start-->	<a href="#x" class="overlay" id="selectstatus"></a>
+						<div class="screenup">
+			    			<div class="screenupflex">
+			    				<p class="statustext">Choose your status:</p>
+				    			<a class="wannadrink" href="index3.html" onclick="myFunction()">Wanna drink!</a>
+<!--								<a class="agreetodrink" href="index3.html" onclick="myFunction()">Agree to drink!</a> -->
+				  				<a class="dontdisturb" href="index3.html" onclick="myFunction()">Don't disturb</a>
+				  				<p class="statuscompletetext">Express your status:</p>
+				  				<textarea id="statuscomplete" placeholder ="Type..." rows="3"></textarea>
+				  				<a class="fill" href="index3.html" onclick="myFunction()">Fill</a>
+			  				</div>
+<!--popup end-->		</div>
+	<!--popup screen start-->
+					<a href="#x" class="overlay" id="profile"></a>
+						<div class="screenup">
+							<div class="screenupflex">
+								<div class="photoholder">
+									<img src="img/profile.png" id="photoholder"></img>
+								</div>
+								<div class="main2">	
+									<div class="data2">	
+									<div class="data3">
+										<input type="text" id="NName" placeholder="Nickname">
+							  			<select id="SelectSMF" onchange=
+		   										"if(this.value==='') {this.style.color='gray'} else {this.style.color='#f6d586'}">
+									   		<option disabled selected value="">Sex:</option>
+											<option value="1">Male</option>
+									   		<option value="2">Female</option></select>
+							    		<select id="SelectAGE" onchange=
+		   										"if(this.value==='') {this.style.color='gray'} else {this.style.color='#f6d586'}">
+										    <option disabled selected value="">Day of birthday:</option></select>
+										<select id="SelectCNTRY" onchange=
+		   										"if(this.value==='') {this.style.color='gray'} else {this.style.color='#f6d586'}">
+										    <option disabled selected value="">Country:</option></select>
+										<select id="SelectCITY" onchange=
+		   										"if(this.value==='') {this.style.color='gray'} else {this.style.color='#f6d586'}">
+										    <option disabled selected value="">City:</option></select>
+										<select id="SelectOCCUP" onchange=
+		   										"if(this.value==='') {this.style.color='gray'} else {this.style.color='#f6d586'}">
+										    <option disabled selected value="">Occupation:</option></select>
+										    <input type="text" id="Email" placeholder="Email">
+										<break></break>	
+										<p class="mainlngtext">Main language (app language)</p>
+										<select id="selectlng" onchange=
+		   										"if(this.value==='') {this.style.color='gray'} else {this.style.color='#f6d586'}">
+							    			<option disabled selected value="">Language:</option>
+							   				<option value="English">English</option>
+							    			<option value="Russian"></option></select>
+							  			<div class="olang">
+							  				<p class="otherlngtext">Other languages:</p>
+							  				<div class="plus">
+							  					<img src="img/plus.png" id="plus"></img>
+							  				</div>
+							  			</div>
+							  			
+										<div class="otherlanguages">
+											<div class="lang1">
+												<a class="addlang">Spanish</a>
+												<a class="close2" href="#close">&#10007;</a>
+											</div>
+											<div class="lang2">
+												<a class="addlang">Italian</a>
+												<a class="close2" href="#close">&#10007;</a>
+											</div>
+											<div class="lang3">	
+												<a class="addlang">Russian</a>
+												<a class="close2" href="#close">&#10007;</a>
+											</div>
+										</div>
+										<!--<a class="addlangbtn" href="#">Add language</a>-->
+										
+
+										<div class="olang">
+											<p class="interests">Interests:</p>
+											<div class="plus">
+												<img src="img/plus.png" id="plus"></img>
+											</div>
+										</div>
+
+										<div class="interestsdtl">
+											<div class="int1">
+												<a class="addintrst">Music</a>
+												<a class="close2" href="#close">&#10007;</a>
+											</div>
+											<div class="int1">
+												<a class="addintrst">Traveling</a>
+												<a class="close2" href="#close">&#10007;</a>
+											</div>
+											<div class="int1">
+												<a class="addintrst">Fishing</a>
+												<a class="close2" href="#close">&#10007;</a>
+											</div>
+										</div>
+										<!--<a class="addintrstbtn" href="#">Add interests</a>-->
+										<!--<input type="text" id="Email" placeholder="Email">-->
+								  		<!--<a class="changepswrd" href="#change-pswrd">Change password</a>-->
+									<a class="save" href="#" onclick="myFunction()">Save</a>
+								</div> <!--data3-->
+							</div> <!--data2-->
+						</div> <!--main2-->
+							</div><!--screenupflex-->
+						</div><!--screenup-->	
+<!--popup screen end-->
+	</body>
+		<script>
+			function myFunction() {
+				var element = document.getElementById("wrapper");
+				element.classList.toggle("alerting");
+				}
+		</script>
+		</html>
