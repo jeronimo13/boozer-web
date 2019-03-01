@@ -32,6 +32,9 @@ div::-webkit-scrollbar-thumb {
 div::-webkit-scrollbar-corner {
   background: none;
 }
+.mce-responses {
+	color: #ffda8f
+}
   	.wrapper {
 	display: flex;
 	flex-direction: column;
