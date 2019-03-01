@@ -144,11 +144,11 @@ div::-webkit-scrollbar-corner {
 			#title1 {
 				margin-top: 10vh;
 				color: #ffda8f;
-				font-size: 100px;
+				font-size: 50px;
 			}
 			#title2 {
 				color: #ffda8f;
-				font-size: 100px;
+				font-size: 40px;
 			}
 			#title3 {
 				color: #ffda8f;
@@ -164,23 +164,23 @@ div::-webkit-scrollbar-corner {
 				font-family: serif;
 			}
 			.emailform {
-					display: flex;
+					/* display: flex;
 					flex-direction: row;
 					align-items: center;
 					justify-content: center;
-			
+			 */
 					margin-top: 5vh;
 				}
 
-				input[type="text"] {
+				input[type="text"], input[type="email"] {
 					font-family: 'Roboto', sans-serif;
 					background: rgba(28, 24, 21, 0.7);
 					color:#FCD585;
-					font-size: 1vw;
+					font-size: 20px;
 					font-weight: 100;
 					border: 1px solid rgba(252,213,133, 0.5);
 	                border-radius: 6px;
-					width: 16vw;
+					width: 300px;
 					margin: 8px 0px;
 				   	margin-top: 0.6em;
 					padding: 10px 20px 10px;
@@ -192,7 +192,7 @@ div::-webkit-scrollbar-corner {
 					font-family: 'Roboto', sans-serif;
 					background: rgba(252, 213, 133, 0.99);
 					color: rgba(28, 24, 21, 1);
-					font-size: 1vw;
+					font-size: 20px;
 
 
 					border: 1px solid rgba(252,213,133, 0.5);
