@@ -38,7 +38,8 @@ div::-webkit-scrollbar-corner {
 	flex-direction: column;
 	background: rgba(45,39,39, 0.7);
 	/* flex: 1; */
-	height: -webkit-fill-available;
+	height: 100vh;
+	height: -webkit-fill-available !important;
 }
 .menu {
  	display: flex;
