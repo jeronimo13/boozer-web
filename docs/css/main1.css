@@ -51,7 +51,7 @@ div::-webkit-scrollbar-corner {
   display: flex;
   flex-direction: column;
   background: rgba(45, 39, 39, 0.7);
-  /* height: 100vh; */
+  height: 100vh;
   height: -webkit-fill-available !important;
 }
 
